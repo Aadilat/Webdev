@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Form</title>
+</head>
+<body>
+    <h1>Website Visitor Form</h1>
+
+    <!-- Form Tag to invoke server-side processing -->
+    <form action="http://webdevfoundations.net/scripts/mydemo.asp" method="post">
+        <!-- 1. Text Box for Username -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" maxlength="30" required><br><br>
+
+        <!-- 2. Radio Buttons for Favorite Day -->
+        <label>Favorite Day of the Week:</label><br>
+        <input type="radio" id="monday" name="day" value="Monday">
+        <label for="monday">Monday</label><br>
+        <input type="radio" id="tuesday" name="day" value="Tuesday">
+        <label for="tuesday">Tuesday</label><br>
+        <input type="radio" id="wednesday" name="day" value="Wednesday">
+        <label for="wednesday">Wednesday</label><br>
+        <input type="radio" id="thursday" name="day" value="Thursday">
+        <label for="thursday">Thursday</label><br>
+        <input type="radio" id="friday" name="day" value="Friday">
+        <label for="friday">Friday</label><br>
+        <input type="radio" id="saturday" name="day" value="Saturday">
+        <label for="saturday">Saturday</label><br>
+        <input type="radio" id="sunday" name="day" value="Sunday">
+        <label for="sunday">Sunday</label><br><br>
+
+        <!-- 3. Select List for Social Networking Site -->
+        <label for="social_networking">Favorite Social Networking Site:</label>
+        <select id="social_networking" name="social_networking">
+            <option value="facebook">Facebook</option>
+            <option value="twitter">Twitter</option>
+            <option value="instagram">Instagram</option>
+            <option value="linkedin">LinkedIn</option>
+        </select><br><br>
+
+        <!-- 4. Fieldset for Shipping Address -->
+        <fieldset>
+            <legend>Shipping Address</legend>
+            <label for="addressline1">Address Line 1:</label>
+            <input type="text" id="addressline1" name="addressline1" required><br><br>
+            
+            <label for="addressline2">Address Line 2:</label>
+            <input type="text" id="addressline2" name="addressline2"><br><br>
+            
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required><br><br>
+            
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required><br><br>
+            
+            <label for="zip">Zip Code:</label>
+            <input type="text" id="zip" name="zip" required><br><br>
+        </fieldset><br><br>
+
+        <!-- 5. Image Button for Signup -->
+        <input type="image" src="C:\Users\aadil\Documents\signup.gif" alt="Signup"><br><br>
+
+        <!-- 6. Hidden Input for User ID -->
+        <input type="hidden" name="userid" value="12345"><br><br>
+
+        <!-- 7. Password Box for Password -->
+        <label for="pword">Password:</label>
+        <input type="password" id="pword" name="pword" required><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit"w value="Submit">
+    </form>
+</body>
+</html>
